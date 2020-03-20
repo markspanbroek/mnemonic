@@ -1,0 +1,11 @@
+# Package
+
+version     = "0.1.0"
+author      = "Mark Spanbroek"
+description = "Create memorable sentences from byte strings."
+license     = "MIT"
+
+# Dependencies
+
+requires "nim >= 1.0.6 & < 2.0.0"
+requires "nimsha2 >= 0.1.1 & < 0.2.0"
