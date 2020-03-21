@@ -15,4 +15,11 @@ test "converts bits to bytes":
 
 test "converts bits to integers":
   let bits = @[true, false, true, false]
-  check bits.toUInt16 == 10
+  check bits.toUInt16 == 0b1010
+
+test "converts integer to bits":
+  let integer: uint16 = 0b1010101001010101
+  let bits =
+    @[true, false, true, false, true, false, true, false] &
+    @[false, true, false, true, false, true, false, true]
+  check integer.toBits == bits
