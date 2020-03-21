@@ -13,7 +13,14 @@ Generate a random key and encode it into a mnemonic:
 import sysrandom
 import mnemonic
 
-echo encode(getRandomBytes(32))
+let key = getRandomBytes(32)
+let mnemonic = encode(key)
+```
+
+Decode a mnemonic into bytes:
+
+```nim
+let decoded = decode(mnemonic) # equals key
 ```
 
 [1]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
