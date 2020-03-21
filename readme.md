@@ -1,7 +1,7 @@
 Mnemonic
 ========
 
-Create memorable sentences from byte strings. Uses a reversible method that
+Create memorable sentences from byte sequences. Uses a reversible method that
 is very similar to Bitcoin's [BIP39][1].
 
 Examples
