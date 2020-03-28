@@ -2,7 +2,6 @@ import mnemonic/bits
 import mnemonic/words
 import strutils
 import sequtils
-import algorithm
 import nimsha2
 
 func hash(bytes: openArray[byte]): seq[bool] =
@@ -15,14 +14,6 @@ func checksum(bytes: openArray[byte]): seq[bool] =
 
 func checkLength(bytes: openArray[byte]) =
   assert bytes.len * 8 in [128, 160, 192, 224, 256]
-
-proc indexToWord(index: uint16): string =
-  english[index]
-
-proc wordToIndex(word: string): uint16 =
-  let index = english.binarySearch(word)
-  assert index >= 0
-  return index.uint16
 
 proc encode*(bytes: openArray[byte]): string =
   checkLength(bytes)
