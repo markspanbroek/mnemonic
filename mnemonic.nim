@@ -2,7 +2,7 @@ import mnemonic/bits
 import mnemonic/words
 import strutils
 import sequtils
-import nimsha2
+import nimSHA2
 
 func hash(bytes: openArray[byte]): seq[bool] =
   let sha = computeSHA256(cast[string](bytes.toSeq))
