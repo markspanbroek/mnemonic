@@ -1,6 +1,6 @@
 # Package
 
-version     = "0.1.2"
+version     = "0.1.3"
 author      = "Mark Spanbroek"
 description = "Create memorable sentences from byte sequences."
 license     = "MIT"
